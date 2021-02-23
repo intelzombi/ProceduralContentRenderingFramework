@@ -1,0 +1,128 @@
+<SphereTreeGrammar>
+  <GrammarElement Name="GDV">
+    <Property Name="Name" value="STG1"/>
+    <Property Name="LevelCount" value="5"/>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="0"/>
+      <Property Name="longitudePointCount" value1="16"/>
+      <Property Name="latitudePointCount" value1="16"/>
+      <Property Name="AxialBias" MinAngle="10.0"/>
+      <Property Name="AxialBias" MaxAngle="330.0"/>
+      <Property Name="Radius" value1="1.0"/>
+      <Property Name="dropAngle" Angle="10.0"/>
+      <Property Name="Heading" value1="0.0" value2="1.0" value3="0.0"/>
+      <Property Name="SphereType" value1="TRUNK"/>
+      <Property Name="splitListcount" value1="1"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="1.0"/>
+      <Property Name="splitCount" value1="9"/>
+      <Property Name="type" value1="FRACTAL_S"/>
+    </Properties>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="1"/>
+      <Property Name="longitudePointCount" value1="12"/>
+      <Property Name="latitudePointCount" value1="12"/>
+      <Property Name="AxialBias" MinAngle="30.0"/>
+      <Property Name="AxialBias" MaxAngle="330.0"/>
+      <Property Name="Radius" value1="1.0"/>
+      <Property Name="dropAngle" Angle="30.0"/>
+      <Property Name="SphereType" value1="CHILD"/>
+      <Property Name="splitListcount" value1="2"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="0.05"/>
+      <Property Name="splitCount" value1="5"/>
+      <Property Name="type" value1="FRACTAL_S"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="1"/>
+      <Property Name="probability" value1="0.950"/>
+      <Property Name="splitCount" value1="1"/>
+      <Property Name="type" value1="FRACTAL_I"/>
+    </Properties>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="2"/>
+      <Property Name="longitudePointCount" value1="12"/>
+      <Property Name="latitudePointCount" value1="12"/>
+      <Property Name="AxialBias" MinAngle="30.0"/>
+      <Property Name="AxialBias" MaxAngle="330.0"/>
+      <Property Name="Radius" value1="1.0"/>
+      <Property Name="dropAngle" Angle="10.0"/>
+      <Property Name="SphereType" value1="CHILD"/>
+      <Property Name="splitListcount" value1="1"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="1.0"/>
+      <Property Name="splitCount" value1="2"/>
+      <Property Name="type" value1="FRACTAL_Y"/>
+    </Properties>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="3"/>
+      <Property Name="longitudePointCount" value1="12"/>
+      <Property Name="latitudePointCount" value1="12"/>
+      <Property Name="AxialBias" MinAngle="30.0"/>
+      <Property Name="AxialBias" MaxAngle="330.0"/>
+      <Property Name="Radius" value1="1.0"/>
+      <Property Name="dropAngle" Angle="10.0"/>
+      <Property Name="SphereType" value1="CHILD"/>
+      <Property Name="splitListcount" value1="3"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="0.5"/>
+      <Property Name="splitCount" value1="2"/>
+      <Property Name="type" value1="FRACTAL_Y"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="1"/>
+      <Property Name="probability" value1="0.250"/>
+      <Property Name="splitCount" value1="2"/>
+      <Property Name="type" value1="FRACTAL_YPEAT"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="2"/>
+      <Property Name="probability" value1="0.250"/>
+      <Property Name="splitCount" value1="1"/>
+      <Property Name="type" value1="FRACTAL_I"/>
+    </Properties>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="4"/>
+      <Property Name="longitudePointCount" value1="12"/>
+      <Property Name="latitudePointCount" value1="12"/>
+      <Property Name="AxialBias" MinAngle="30.0"/>
+      <Property Name="AxialBias" MaxAngle="330.0"/>
+      <Property Name="Radius" value1="0.02469"/>
+      <Property Name="dropAngle" Angle="10.0"/>
+      <Property Name="SphereType" value1="CHILD"/>
+      <Property Name="splitListcount" value1="2"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="0.950"/>
+      <Property Name="splitCount" value1="1"/>
+      <Property Name="type" value1="FRACTAL_I"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="1"/>
+      <Property Name="probability" value1="0.05"/>
+      <Property Name="splitCount" value1="0"/>
+      <Property Name="type" value1="TERMINAL"/>
+    </Properties>
+  </GrammarElement>
+
+</SphereTreeGrammar>
+

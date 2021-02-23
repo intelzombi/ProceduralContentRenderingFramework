@@ -1,0 +1,251 @@
+<TreeGrammar>
+  <GrammarElement Name="GDV">
+    <Property Name="Name" value="TG1"/>
+    <Property Name="LevelCount" value="2"/>
+    <Property Name="AbstractEffect" value="0"/>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="0"/>
+      <Property Name="tipPointCount" value1="13"/>
+      <Property Name="AxialBias" MinAngle="0.0"/>
+      <Property Name="AxialBias" MaxAngle="360.0"/>
+      <Property Name="Length" value1="10.0"/>
+      <Property Name="Diameter" value1="10.0"/>
+      <Property Name="SegmentCount" value1="5.0"/>
+      <Property Name="taper" value1="0.30"/>
+      <Property Name="dropAngle" MinAngle="10.0"/>
+      <Property Name="dropAngle" MaxAngle="25.0"/>
+      <Property Name="dropAngle" BiasAngle="50.0"/>
+      <Property Name="Heading" value1="0.0" value2="1.0" value3="0.0"/>
+      <Property Name="Heading" MinAngle="-5.0"/>
+      <Property Name="Heading" MaxAngle="5.0"/>
+      <Property Name="branchType" value1="TRUNK"/>
+      <Property Name="canopyType" value1="NULL_CANOPY"/>
+      <Property Name="splitListcount" value1="2"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="0.70"/>
+      <Property Name="splitCount" value1="0"/>
+      <Property Name="type" value1="ORDINARY"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="1"/>
+      <Property Name="probability" value1="0.30"/>
+      <Property Name="splitCount" value1="0"/>
+      <Property Name="type" value1="REPEAT_OPPOSED"/>
+    </Properties>  
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="1"/>
+      <Property Name="PerturbFactor" value1="2.0"/>
+      <Property Name="branchType" value1="NULL_BRANCH"/>
+      <Property Name="canopyType" value1="PATCH"/>
+      <Property Name="splitListcount" value1="1"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="1.0"/>
+      <Property Name="splitCount" value1="0"/>
+      <Property Name="type" value1="ORDINARY"/>
+    </Properties>
+  </GrammarElement>  <!--<GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="1"/>
+      <Property Name="tipPointCount" value1="11"/>
+      <Property Name="AxialBias" MinAngle="30.0"/>
+      <Property Name="AxialBias" MaxAngle="330.0"/>
+      <Property Name="Length" value1="7.0"/>
+      <Property Name="Diameter" value1="2.0"/>
+      <Property Name="taper" value1="0.20"/>
+      <Property Name="dropAngle" MinAngle="35.0"/>
+      <Property Name="dropAngle" MaxAngle="50.0"/>
+      <Property Name="dropAngle" BiasAngle="40.0"/>
+      <Property Name="Heading" MinAngle="-20.0"/>
+      <Property Name="Heading" MaxAngle="20.0"/>
+      <Property Name="branchType" value1="BRANCH"/>
+      <Property Name="canopyType" value1="NULL_CANOPY"/>
+      <Property Name="splitListcount" value1="5"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="0.05"/>
+      <Property Name="splitCount" value1="3"/>
+      <Property Name="type" value1="REPEAT_OPPOSED"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="1"/>
+      <Property Name="probability" value1="0.05"/>
+      <Property Name="splitCount" value1="3"/>
+      <Property Name="type" value1="REPEAT_OPPOSED"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="2"/>
+      <Property Name="probability" value1="0.25"/>
+      <Property Name="splitCount" value1="3"/>
+      <Property Name="type" value1="REPEAT_OPPOSED"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="3"/>
+      <Property Name="probability" value1="0.45"/>
+      <Property Name="splitCount" value1="2"/>
+      <Property Name="type" value1="ORDINARY"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="4"/>
+      <Property Name="probability" value1="0.20"/>
+      <Property Name="splitCount" value1="2"/>
+      <Property Name="type" value1="ORDINARY"/>
+    </Properties>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="2"/>
+      <Property Name="tipPointCount" value1="9"/>
+      <Property Name="AxialBias" MinAngle="30.0"/>
+      <Property Name="AxialBias" MaxAngle="330.0"/>
+      <Property Name="Length" value1="6.0"/>
+      <Property Name="Diameter" value1="1.0"/>
+      <Property Name="taper" value1="0.33"/>
+      <Property Name="dropAngle" MinAngle="35.0"/>
+      <Property Name="dropAngle" MaxAngle="50.0"/>
+      <Property Name="dropAngle" BiasAngle="40.0"/>
+      <Property Name="Heading" MinAngle="-20.0"/>
+      <Property Name="Heading" MaxAngle="20.0"/>
+      <Property Name="branchType" value1="BRANCH"/>
+      <Property Name="canopyType" value1="NULL_CANOPY"/>
+      <Property Name="splitListcount" value1="3"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="0.25"/>
+      <Property Name="splitCount" value1="1"/>
+      <Property Name="type" value1="REPEAT_OPPOSED"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="1"/>
+      <Property Name="probability" value1="0.25"/>
+      <Property Name="splitCount" value1="1"/>
+      <Property Name="type" value1="OPPOSED"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="2"/>
+      <Property Name="probability" value1="0.5"/>
+      <Property Name="splitCount" value1="2"/>
+      <Property Name="type" value1="ORDINARY"/>
+    </Properties>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="3"/>
+      <Property Name="tipPointCount" value1="7"/>
+      <Property Name="AxialBias" MinAngle="30.0"/>
+      <Property Name="AxialBias" MaxAngle="330.0"/>
+      <Property Name="Length" value1="4.0"/>
+      <Property Name="Diameter" value1="1.0"/>
+      <Property Name="taper" value1="0.50"/>
+      <Property Name="dropAngle" MinAngle="55.0"/>
+      <Property Name="dropAngle" MaxAngle="70.0"/>
+      <Property Name="dropAngle" BiasAngle="60.0"/>
+      <Property Name="Heading" MinAngle="-20.0"/>
+      <Property Name="Heading" MaxAngle="20.0"/>
+      <Property Name="branchType" value1="BRANCH"/>
+      <Property Name="canopyType" value1="NULL_CANOPY"/>
+      <Property Name="splitListcount" value1="2"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="0.10"/>
+      <Property Name="splitCount" value1="1"/>
+      <Property Name="type" value1="REPEAT_CANOPY"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="1"/>
+      <Property Name="probability" value1="0.9f"/>
+      <Property Name="splitCount" value1="4"/>
+      <Property Name="type" value1="OPPOSED"/>
+    </Properties>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="4"/>
+      <Property Name="tipPointCount" value1="7"/>
+      <Property Name="AxialBias" MinAngle="30.0"/>
+      <Property Name="AxialBias" MaxAngle="330.0"/>
+      <Property Name="Length" value1="3.0"/>
+      <Property Name="Diameter" value1="0.5"/>
+      <Property Name="taper" value1="0.0"/>
+      <Property Name="dropAngle" MinAngle="70.0"/>
+      <Property Name="dropAngle" MaxAngle="90.0"/>
+      <Property Name="dropAngle" BiasAngle="75.0"/>
+      <Property Name="Heading" MinAngle="-40.0"/>
+      <Property Name="Heading" MaxAngle="40.0"/>
+      <Property Name="branchType" value1="STEM"/>
+      <Property Name="canopyType" value1="NULL_CANOPY"/>
+      <Property Name="splitListcount" value1="2"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1=""/>0.0
+      <Property Name="splitCount" value1="0"/>
+      <Property Name="type" value1="ORDINARY"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="1"/>
+      <Property Name="probability" value1="1.0"/>
+      <Property Name="splitCount" value1="0"/>
+      <Property Name="type" value1="ORDINARY"/>
+    </Properties>
+  </GrammarElement>
+  <GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1="5"/>
+      <Property Name="PerturbFactor" value1="2.0"/>
+      <Property Name="branchType" value1="NULL_BRANCH"/>
+      <Property Name="canopyType" value1="PATCH"/>
+      <Property Name="splitListcount" value1="1"/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1="0"/>
+      <Property Name="probability" value1="1.0"/>
+      <Property Name="splitCount" value1="0"/>
+      <Property Name="type" value1="ORDINARY"/>
+    </Properties>
+  </GrammarElement>-->
+  <!--<GrammarElement>
+    <Properties GrammarToken="Level">
+      <Property Name="LevelID" value1=""/>
+      <Property Name="tipPointCount" Value1=""/>
+      <Property Name="AxialBias" MinAngle=""/>
+      <Property Name="AxialBias" MaxAngle=""/>
+      <Property Name="Length" value1=""/>
+      <Property Name="Diameter" value1=""/>
+      <Property Name="taper" value1=""/>
+      <Property Name="dropAngle" MinAngle=""/>
+      <Property Name="dropAngle" MaxAngle=""/>
+      <Property Name="dropAngle" BiasAngle=""/>
+      <Property Name="Heading" Value1="" Value2="" Value3=""/>
+      <Property Name="Heading" MinAngle=""/>
+      <Property Name="Heading" MaxAngle=""/>
+      <Property Name="branchType" value1="TRUNK::BRANCH::STEM::NULL_BRANCH"/>
+      <Property Name="canopyType" value1="NULL_CANOPY::PATCH"/>
+      <Property Name="PerturbFactor" Value1=""/>      
+      <Property Name="splitListcount" value1=""/>
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1=""/>
+      <Property Name="probability" value1=""/>
+      <Property Name="splitCount" value1=""/>
+      <Property Name="type" value1="ORDINARY::OPPOSED::REPEAT_CANOPY::REPEAT_OPPOSED"/>     
+    </Properties>
+    <Properties GrammarToken="SplitList">
+      <Property Name="splitID" value1=""/>
+      <Property Name="probability" value1=""/>
+      <Property Name="splitCount" value1=""/>
+      <Property Name="type" value1="ORDINARY::OPPOSED::REPEAT_CANOPY::REPEAT_OPPOSED"/>     
+    </Properties>
+  </GrammarElement>-->
+
+</TreeGrammar>
